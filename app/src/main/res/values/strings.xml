@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="splashScreen">Welcome</string>
+    <string name="message">Select the words from below dictionary :</string>
+</resources>

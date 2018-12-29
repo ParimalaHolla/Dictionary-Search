@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Search">
+
+    <TextView
+        android:id="@+id/labelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/dictData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelText"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/startWordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="start word"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+         android:layout_below="@id/dictData" />
+    <EditText
+        android:id="@+id/endWordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:hint="end word"
+        android:layout_below="@id/startWordTxt"/>
+
+    <Button
+        android:id="@+id/findBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Length"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/endWordTxt"/>
+
+    <TextView
+        android:id="@+id/lengthTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findBtn"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    </RelativeLayout>
